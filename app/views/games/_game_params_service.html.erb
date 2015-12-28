@@ -1,0 +1,7 @@
+<script>
+  TfCardsApp.service('gameParams', [function(){
+      return <%=  ActiveModel::ArraySerializer.new(
+       [id: @game.id]
+      ).to_json.html_safe %>;
+  }]);
+</script>
